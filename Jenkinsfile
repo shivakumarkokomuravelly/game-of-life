@@ -8,7 +8,7 @@ node
   {
      sh 'mvn package'
    }
-}
+
  stage('download test results')
   {
      junit '/target/surefire-reports/*.xml'
